@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Type of inputs</h1>
+    <form action="" method="">
+        <!--Normal Text-->
+        <label for="username" placeholder="Enter your Name">Username</label>
+        <input id="username"/><br><br>
+        <!--Password-->
+        <label for="password">Password</label>
+        <input type="password"id="password"/><br><br>
+        <!--Email-->
+        <label for="email">Email</label>
+        <input type="email" id="email"/><br><br>
+        <!--Number-->
+        <label for="number">Number</label>
+        <input type="number"min="1" max="100" id="number"/><br><br>
+        <!--Date-->
+        <label for="date">Date</label>
+        <input type="date" id="date"><br><br>
+        <!--Time-->
+        <label for="time">Time</label>
+        <input type="time" id ="time"><br><br>
+        <!--color-->
+        <label for="color">Color</label>
+        <input id="color" type="color"><br><br>
+        <!--Check Box-->
+        <label for="checkbox">CheckBox</label>
+        <input type="checkbox" id="checkbox"><br><br>
+        <!--Radio Buttons-->
+        <label >Gender</label><br>
+        <input id="male" type="radio" vlaue="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!--Dropdown select-->
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="India">India</option>
+            <option value="usa">USA</option>
+            <option value="UK">UK</option>
+            <option value="canada">CANADA</option>
+        </select><br><br>
+        <!--TextArea-->
+        <label for="Comment">Comments:</label><br>
+        <textarea name="Comment" id="Comment" rows="5" cols="50"></textarea><br><br>
+
+        <!--File input-->
+        <label for="file">Uplode a File</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!--Range-->
+        <label for="range">Range</label>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+        <!--URL-->
+        <label for="website">Website</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+        <!--Submit button-->
+        <input type="submit" value="submit Form"><br><br>
+
+        <!--reset button-->
+        <input type="reset" value="Reset Form">
+    </form>
+</body>
+</html>
