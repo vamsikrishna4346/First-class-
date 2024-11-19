@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 30px;
+            font-family: 'italic';
+            font-weight: bold;
+        }
+        p{
+            font-size: 15px;
+            color: gray;
+        }
+        h1::before{
+            content:">>> ";
+            color: gold;
+            font-size: 50px;
+        }
+        h1::after{
+            content: " <<<";
+            color: gold;
+            font-size: 50px;
+        }
+        p::first-line{
+            color:indigo;
+            font-size: 20px;
+        }
+        p::first-letter{
+            text-decoration: line-through;
+        }
+        body::selection{
+            background-color: yellow;
+        }
+        ul{
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="border: 2px solid; text-align: center;border-radius: 10px;">
+    <h1>This is pseudoElement</h1>
+    <p>  aAnd some of the PseudoElement Example </p>
+    <div>
+        <ul style="color: cadetblue;">
+            <li>after</li>
+            <li>before</li>
+            <li>first-Letter</li>
+            <li>first-Line</li>
+            <li>selection</li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
